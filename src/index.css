@@ -1,13 +1,133 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  transition: all ease 0.4s;
+}
+:root {
+  --main-color: #eb5757;
+  --lihgt-main-color: #fee9de;
+  --white-color: #ffffff;
+  --text-color: #333333;
+  --gold-color: #f2c94c;
+  --gray-color: #e0e0e0;
+  --black-color: #000000;
+}
+@media screen and (min-width: 200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .head-1-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .head-2-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .head-3-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .main-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  button {
+    padding: 8px;
+  }
+  .logo img {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .head-1-text {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  .head-2-text {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  .head-3-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .main-text {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 500;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 85%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .head-1-text {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .head-2-text {
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+  .head-3-text {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .main-text {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+}
+a {
+  border: 0;
+  outline: 0;
+  padding: 12px 30px;
+  color: var(--white-color);
+  background-color: var(--main-color);
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1.5px solid var(--main-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
 }

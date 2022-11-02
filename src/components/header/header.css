@@ -1,0 +1,27 @@
+@import "../app/App.css";
+nav {
+  height: 80px;
+  padding: 20px 0;
+}
+nav .container .nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+nav .container .nav-content .btns {
+  display: flex;
+  gap: 20px;
+}
+nav .container .nav-content .btns a:hover {
+  background-color: transparent;
+  color: var(--text-color);
+}
+nav .container .nav-content .btns a:nth-child(1) {
+  background-color: transparent;
+  color: var(--text-color);
+}
+nav .container .nav-content .btns a:nth-child(1):hover {
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
