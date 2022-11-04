@@ -6,6 +6,7 @@
   list-style: none;
   font-family: "Poppins", sans-serif;
   transition: all ease 0.4s;
+  scroll-behavior: smooth;
 }
 :root {
   --main-color: #eb5757;
@@ -13,8 +14,27 @@
   --white-color: #ffffff;
   --text-color: #333333;
   --gold-color: #f2c94c;
-  --gray-color: #e0e0e0;
+  --gray-color: #b6b0b0;
   --black-color: #000000;
+}
+body {
+  height: 10000px;
+  background-image: url(".././public/assets/main-img/Big-layer.png");
+  background-position: "right";
+  background-size: contain;
+}
+a {
+  border: 0;
+  outline: 0;
+  color: var(--white-color);
+  background-color: var(--main-color);
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1.5px solid var(--main-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 @media screen and (min-width: 200px) {
   .container {
@@ -49,6 +69,15 @@
   .logo img {
     width: 100px;
   }
+  a {
+    padding: 8px 12px;
+  }
+  .main-content .main-btns {
+    flex-direction: column;
+  }
+  .main-content {
+    background-size: 0%;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -68,7 +97,7 @@
   }
   .head-2-text {
     font-size: 2.2rem;
-    font-weight: 600;
+    font-weight: 700;
   }
   .head-3-text {
     font-size: 1.8rem;
@@ -78,6 +107,22 @@
     font-size: 1.1rem;
     color: var(--text-color);
     font-weight: 500;
+  }
+  a {
+    padding: 12px 30px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .main-content .main-btns {
+    flex-direction: row;
+  }
+  .main-content {
+    background-size: 50%;
+    background-position: 100%;
+  }
+  .serv-container .serv-content {
+    gap: 100px !important;
   }
 }
 
@@ -99,7 +144,7 @@
   }
   .head-2-text {
     font-size: 2.7rem;
-    font-weight: 600;
+    font-weight: 700;
   }
   .head-3-text {
     font-size: 2rem;
@@ -110,24 +155,11 @@
     color: var(--text-color);
     font-weight: 500;
   }
+  .serv-container .serv-content {
+    gap: 300px !important;
+  }
 }
-a {
-  border: 0;
-  outline: 0;
-  padding: 12px 30px;
-  color: var(--white-color);
-  background-color: var(--main-color);
-  border-radius: 30px;
-  font-weight: 500;
-  cursor: pointer;
-  border: 1.5px solid var(--main-color);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.logo img {
-  width: 100%;
-}
+
 a {
   text-decoration: none;
 }

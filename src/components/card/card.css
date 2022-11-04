@@ -1,0 +1,36 @@
+.card .card-content {
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+  padding: 10px;
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.card-content .card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-content .card-info .price {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.card-content .card-info .price span {
+  color: var(--gold-color);
+}
+.card-content .card-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.card .card-info-link {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  gap: 50px;
+  cursor: pointer;
+  color: var(--main-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
