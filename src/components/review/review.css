@@ -1,0 +1,14 @@
+.rev-content {
+  margin-top: 300px;
+}
+.rev-content .rev-info {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.rev-content .rev-info .rev-user {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}

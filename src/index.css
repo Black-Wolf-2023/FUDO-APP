@@ -18,23 +18,30 @@
   --black-color: #000000;
 }
 body {
-  height: 10000px;
   background-image: url(".././public/assets/main-img/Big-layer.png");
   background-position: "right";
   background-size: contain;
+}
+.hide-link-style {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border: 0;
 }
 a {
   border: 0;
   outline: 0;
   color: var(--white-color);
-  background-color: var(--main-color);
+  background-color: var(--text-color);
   border-radius: 30px;
   font-weight: 500;
   cursor: pointer;
-  border: 1.5px solid var(--main-color);
+  border: 1.5px solid var(--text-color);
   display: flex;
   align-items: center;
   gap: 10px;
+}
+ul li:hover {
+  color: var(--main-color);
 }
 @media screen and (min-width: 200px) {
   .container {
@@ -77,6 +84,9 @@ a {
   }
   .main-content {
     background-size: 0%;
+  }
+  .rev-img img {
+    width: 300px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -124,6 +134,15 @@ a {
   .serv-container .serv-content {
     gap: 100px !important;
   }
+  .rev-img img {
+    width: 500px !important;
+  }
+  .rev-content {
+    flex-direction: column;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -157,6 +176,9 @@ a {
   }
   .serv-container .serv-content {
     gap: 300px !important;
+  }
+  .rev-img img {
+    width: 800px !important;
   }
 }
 

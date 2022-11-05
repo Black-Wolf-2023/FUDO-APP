@@ -1,6 +1,8 @@
 import React from "react";
 import { Card } from "../card/Card";
+import { Footer } from "../footer/Footer";
 import { Main } from "../main/Main";
+import { Review } from "../review/Review";
 import { Servieces } from "../servieces/Servieces";
 import { Slide } from "../slide/Slide";
 import { Text } from "../small-components/Text";
@@ -42,6 +44,8 @@ export const Home = () => {
         <Card price={19} title={"Pizza Chesse"} img="./assets/icons/food.png" />
         <Card price={19} title={"Pizza Chesse"} img="./assets/icons/food.png" />
       </Slide>
+      <Review />
+      <Footer />
     </>
   );
 };

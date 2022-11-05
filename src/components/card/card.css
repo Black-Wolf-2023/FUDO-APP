@@ -34,3 +34,21 @@
   font-size: 1.2rem;
   font-weight: 500;
 }
+@media screen and (min-width: 200px) and (max-width: 468px) {
+  .card .card-content {
+    width: 180px;
+    height: 200px;
+  }
+  .card-content .card-info .price {
+    font-size: 1.1rem;
+  }
+  .card-content .card-title {
+    font-size: 1.3rem;
+  }
+  .card .card-info-link {
+    font-size: 1rem;
+  }
+  .card .card-info-link img {
+    width: 20px;
+  }
+}
