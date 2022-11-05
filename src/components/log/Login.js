@@ -1,12 +1,15 @@
 import React from "react";
+import { Form } from "../small-components/Form";
+import "./form.css";
 
 export const Login = () => {
   return (
-    <form>
-      <h2>Login</h2>
-      <input type="text" placeholder="ID" />
-      <input type="text" placeholder="Password" />
-      <button>Login</button>
-    </form>
+    <Form
+      inp__data={[
+        <input type="number" placeholder="ID" required />,
+        <input type="password" placeholder="Password" required />,
+      ]}
+      status={true}
+    />
   );
 };
