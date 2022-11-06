@@ -17,7 +17,7 @@ export const Form = ({ inp__data, status }) => {
           {status ? (
             <div className="form-checkbox">
               <input type="checkbox" id="form-checkbox" />
-              <label for="form-checkbox">Remember Me ?</label>
+              <label htmlFor="form-checkbox">Remember Me ?</label>
             </div>
           ) : null}
           <button>{status ? "Login" : "Sign in"}</button>

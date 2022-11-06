@@ -6,8 +6,8 @@ export const Login = () => {
   return (
     <Form
       inp__data={[
-        <input type="number" placeholder="ID" required />,
-        <input type="password" placeholder="Password" required />,
+        <input type="number"  key={0} placeholder="ID" required />,
+        <input type="password" key={1} placeholder="Password" required />,
       ]}
       status={true}
     />

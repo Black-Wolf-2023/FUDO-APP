@@ -9,8 +9,9 @@
 }
 @media screen and (min-width: 200px) and (max-width: 467px) {
   .login-form {
-    height: 100%;
     border-radius: 0;
+    height: 100%;
+    overflow: auto;
   }
 }
 .login-form .form-title {
