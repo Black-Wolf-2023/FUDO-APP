@@ -14,35 +14,40 @@ export const Home = () => {
   let data = useSelector(state => state);
   let slide__data__1 = data.filter((e,index) => index > 12);
   let slide__data__2 = data.filter((e,index) => index < 12);
+
+
   return (
-    <>
-      <Main />
-      <Reveal bottom>
-        <Text
-          title="WHAT WE SERVE"
-          head_1="Your Favorite Food"
-          head_2="Delivery Partner"
-          align="center"
-        />
-      </Reveal>
-      <Servieces />
-      <Fade left>
-        <Text
-          title="OUR MENU"
-          head_1="Foods That Always"
-          head_2="Makes You Fall In Love"
-          align="left"
-        />
-      </Fade>
-      <Slide>
-        {slide__data__1.map(e =>  <Card star={Math.ceil(Math.random() * 5)} price={(Math.random() * 100).toFixed(2)} key={e['tracking-id']} title={e.display.displayName} img={e.display.categoryImage} />)}
-      </Slide>
-      <Slide>
-      {slide__data__2.map(e =>  <Card star={Math.ceil(Math.random() * 5)} key={e['tracking-id']} price={(Math.random() * 100).toFixed(2)} title={e.display.displayName} img={e.display.categoryImage} />)}
-      </Slide>
-      <Review />
-      <Footer />
-      <Loader/>
-    </>
+    <Fade bottom cascade>
+      <div className="root-dom">
+            <Main />
+            <Reveal bottom>
+              <Text
+                title="WHAT WE SERVE"
+                head_1="Your Favorite Food"
+                head_2="Delivery Partner"
+                align="center"
+              />
+            </Reveal>
+            <Servieces />
+            <Fade left>
+              <Text
+                title="OUR MENU"
+                head_1="Foods That Always"
+                head_2="Makes You Fall In Love"
+                align="left"
+              />
+            </Fade>
+            <Slide>
+              {slide__data__1.map(e =>  <Card star={Math.ceil(Math.random() * 5)} price={(Math.random() * 100).toFixed(2)} key={Date.now() / Math.random()*362} title={e.display.displayName} img={e.display.categoryImage} />)}
+            </Slide>
+            <Slide>
+            {slide__data__2.map(e =>  <Card star={Math.ceil(Math.random() * 5)} key={Date.now() / Math.random()*362} price={(Math.random() * 100).toFixed(2)} title={e.display.displayName} img={e.display.categoryImage} />)}
+            </Slide>
+            <Review />
+            <Footer />
+            <Loader/>
+          </div>
+    </Fade>
+    
   );
 };

@@ -14,7 +14,6 @@ export const Slide = ({ children }) => {
   }
   function slide__right() {
     card__slider.current.scrollLeft += 300;
-    console.log(data);
   }
   useEffect(() => {
     dispatch(data__fetcher());
