@@ -3,7 +3,7 @@ import React from "react";
 export const Text = ({ title, head_1, head_2, align }) => {
   return (
     <div className="container">
-      <div style={{ textAlign: align, margin: "100px 0" }}>
+      <div style={{ textAlign: align, margin: "100px 0" , backgroundColor:"#fff"}}>
         <p
           style={{
             color: "var(--main-color)",

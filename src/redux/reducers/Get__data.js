@@ -3,7 +3,7 @@ import React from "react";
 import axios from "axios";
 
 export const Get__data = (
-  state = [{ id: 0, name: "Abdalrhman", title: "test" }],
+  state = [],
   action
 ) => {
   switch (action.type) {
