@@ -12,9 +12,8 @@ import { Text } from "../small-components/Text";
 
 export const Home = () => {
   let data = useSelector(state => state);
-  let slide__data__1 = data.filter((e,index) => index > 12);
-  let slide__data__2 = data.filter((e,index) => index < 12);
-
+  let slide__data__1 = data.filter((e,index) => index > 25);
+  let slide__data__2 = data.filter((e,index) => index < 25);
 
   return (
     <Fade bottom cascade>
@@ -38,11 +37,10 @@ export const Home = () => {
               />
             </Fade>
             <Slide>
-              {slide__data__1.map(e =>  <Card star={Math.ceil(Math.random() * 5)} price={(Math.random() * 100).toFixed(2)} key={Date.now() / Math.random()*362} title={e.display.displayName} img={e.display.categoryImage} />)}
+              {slide__data__1.map(e =>  <Card star={Math.ceil(Math.random() * 5)} price={(Math.random() * 100).toFixed(2)} key={Date.now() / Math.random()*362} title={e.strCategory} img={e.strCategoryThumb} />)}
             </Slide>
             <Slide>
-            {slide__data__2.map(e =>  <Card star={Math.ceil(Math.random() * 5)} key={Date.now() / Math.random()*362} price={(Math.random() * 100).toFixed(2)} title={e.display.displayName} img={e.display.categoryImage} />)}
-            </Slide>
+              {slide__data__2.map(e =>  <Card star={Math.ceil(Math.random() * 5)} price={(Math.random() * 100).toFixed(2)} key={Date.now() / Math.random()*362} title={e.strCategory} img={e.strCategoryThumb} />)}              </Slide>
             <Review />
             <Footer />
             <Loader/>
