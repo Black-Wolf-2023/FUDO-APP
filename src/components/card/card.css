@@ -1,3 +1,6 @@
+.card-container{
+  padding: 10px;
+}
 .card .card-content {
   width: 250px;
   height: 300px;
@@ -7,6 +10,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 .card-content .card-info {
   display: flex;
@@ -51,4 +57,18 @@
   .card .card-info-link img {
     width: 20px;
   }
+}
+.crad-info-garp{
+  z-index: 2;
+}
+.crad-info-garp::after{
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #353b4871;
+  backdrop-filter: blur(2px);
+  z-index: -1;
 }

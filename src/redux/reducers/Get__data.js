@@ -8,7 +8,7 @@ export const Get__data = (
 ) => {
   switch (action.type) {
     case "GET__DATA":
-      return [...state,...action.paylod]
+      return [...action.paylod]
       break;
     default :
       return state;

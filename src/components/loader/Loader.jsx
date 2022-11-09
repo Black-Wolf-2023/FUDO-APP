@@ -8,7 +8,7 @@ export const Loader = () => {
     let [status,changeStatus] = useState(false);
 
     useEffect(() => {
-        if(data.length < 50) {
+        if(data.length < 14) {
             changeStatus(false);
             document.querySelector('body').style.overflow = "hidden"
             return;
