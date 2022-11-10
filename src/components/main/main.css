@@ -1,5 +1,4 @@
 .main-content {
-  height: calc(90vh - 80px);
   overflow: hidden;
   justify-content: center;
   align-items: flex-start;
@@ -48,6 +47,7 @@
 }
 .main-content .main-btns button:nth-child(2) {
   padding: 0;
+  background-color: var(--lihgt-main-color);
 }
 .main-paly-icon-img {
   background-color: var(--main-color);

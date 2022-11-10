@@ -4,14 +4,15 @@
     align-items: center;
     width: 85%;
     margin: auto;
-    gap: 100px;
+    gap: 50px;
     padding: 30px;
     position: relative;
 }
-@media screen and (min-width:200px) and (max-width:567px){
+@media screen and (min-width:200px) and (max-width:967px){
     .meal-container{
         padding: 100px 0;
         height: auto;
+        flex-direction: column;
     }
     .meal-container img{
         width: 100%;

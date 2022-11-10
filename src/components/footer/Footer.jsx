@@ -11,7 +11,7 @@ export const Footer = () => {
   ];
   let titles = ["About", "Company", "Support"];
   return (
-    <>
+    <div id="footer">
       <footer className="container">
         <div>
           <div className="footer-content container flex">
@@ -56,6 +56,6 @@ export const Footer = () => {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 };

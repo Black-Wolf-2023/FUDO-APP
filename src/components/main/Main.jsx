@@ -2,7 +2,10 @@ import React from "react";
 import "./main.css";
 import {Fade, Slide} from 'react-reveal';
 
-export const Main = () => {
+export const Main = ({status}) => {
+  function sender(){
+    status(true);
+  }
   return (
     <div className="container">
       <div className="main-content flex">
@@ -21,7 +24,7 @@ export const Main = () => {
                 <button className="main-text">
                   More than Faster <img src="./assets/icons/friutes.png" alt="" />
                 </button>
-                <button className="main-text">
+                <button className="main-text" onClick={sender}>
                   <div className="main-paly-icon-img">
                     <img src="./assets/icons/play.svg" alt="" />
                   </div>{" "}

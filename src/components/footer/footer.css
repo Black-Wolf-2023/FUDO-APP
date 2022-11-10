@@ -1,3 +1,9 @@
+#footer{
+  background-color: var(--dark-main-color);
+}
+#footer *{
+  color: var(--white-color);
+}
 .footer-content {
   justify-content: space-between;
   align-items: flex-start;
@@ -10,6 +16,7 @@
   flex-direction: column;
   gap: 30px;
   margin-bottom: 50px;
+
 }
 .footer-content .footer-contact .footer-social-links {
   display: flex;
@@ -18,7 +25,7 @@
 .footer-content .footer-contact .footer-social-links span {
   width: 45px;
   height: 45px;
-  background-color: var(--lihgt-main-color);
+  background-color: var(--text-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -26,7 +33,7 @@
   cursor: pointer;
 }
 .footer-content .footer-contact .footer-social-links span:hover {
-  background-color: var(--text-color);
+  background-color: var(--white-color);
 }
 .footer-content .addition-info {
   display: flex;
@@ -39,7 +46,7 @@
   border: 0;
   outline: 0;
   background-color: var(--text-color);
-  color: var(--main-color);
+  color: var(--main-color) !important;
   font-weight: 600;
   cursor: pointer;
   display: flex;
@@ -51,6 +58,6 @@
   padding: 10px 30px;
 }
 .footer-content .addition-info button:hover {
-  background-color: var(--lihgt-main-color);
+  background-color: var(--white-color);
   color: var(--text-color);
 }

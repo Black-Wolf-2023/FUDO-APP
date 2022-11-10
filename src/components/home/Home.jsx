@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Fade, Reveal } from "react-reveal";
+import { Audio } from "../audio/Audio";
 import { Card } from "../card/Card";
 import { Footer } from "../footer/Footer";
 import { Loader } from "../loader/Loader";
@@ -14,12 +15,18 @@ export const Home = () => {
   let data = useSelector(state => state);
   let slide__data__1 = data.filter((e,index) => index > 7);
   let slide__data__2 = data.filter((e,index) => index < 7);
+  let [audio__status,setStatus] = useState(false)
+
+  function audio__status__sender(status) {
+    setStatus(status);
+  }
+
 
 
   return (
     <Fade bottom cascade>
       <div className="root-dom">
-            <Main />
+            <Main status={audio__status__sender}/>
             <Reveal bottom>
               <Text
                 title="WHAT WE SERVE"
@@ -45,6 +52,7 @@ export const Home = () => {
             <Review />
             <Footer />
             <Loader/>
+            <Audio status={audio__status} rester={audio__status__sender}/>
           </div>
     </Fade>
     
